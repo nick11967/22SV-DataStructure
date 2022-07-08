@@ -17,7 +17,6 @@ public class MainPoly {
     while(ifs.ready()) {
         String token = ifs.readWord();
 	char c = token.charAt(token.length()-1);
-	//if (token.charAt(0) < '0' || '9' < token.charAt(0)) {
 	if (c < '0' || '9' < c) {
 		op = token.charAt(0);
 		p = poly2;
