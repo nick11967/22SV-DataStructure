@@ -13,7 +13,7 @@ public class Polynomial {
         poly = new TreeMap<Integer, Integer>(Collections.reverseOrder());
         poly.put(exp,coef);
     }
-    // Add
+    // Addition
     public Polynomial add(Polynomial opnd) {
         for(Map.Entry<Integer, Integer> e : opnd.poly.entrySet()) {
             Integer key = e.getKey();
@@ -31,7 +31,7 @@ public class Polynomial {
         return this;
     }
 
-    // Subtract
+    // Subtraction
     public Polynomial sub(Polynomial opnd) {
         for (Map.Entry<Integer, Integer> entry : opnd.poly.entrySet()) {
             Integer key = entry.getKey();
