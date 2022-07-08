@@ -5,14 +5,8 @@ import java.io.*;
 public class MainPoly {
   public static void main(String args[]) throws IOException
   {
-      String strings1 = "./public/test01";
-
-    /*
-    if (args.length != 1) {
-	System.err.println("Usage: java MainPoly input-file");
-	System.exit(0);
-    }
-    */
+    String strings1 = "./public/test01";
+	  
     TextInputStream ifs = new TextInputStream(strings1);
 
     Polynomial poly1 = new Polynomial();
@@ -34,10 +28,7 @@ public class MainPoly {
 	Polynomial temp = new Polynomial(coef,exp);
 	p.add(temp);
     }
-
-    //poly1.println();
-    //poly2.println();
-
+	  
     System.out.print('(');
     poly1.print();
 
