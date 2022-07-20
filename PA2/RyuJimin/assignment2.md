@@ -25,18 +25,15 @@ method defined in the class skeletons.
 • The BST methods must meet the following requirements.
 
 1. The insert(String key) method inserts a key into the tree using the standard BST insertion
-   algorithm. If the same key exists already in the tree, increment its frequency by one without inserting
-   the key itself into the tree. Otherwise, insert the key and set the frequency to one.
+   algorithm. If the same key exists already in the tree, increment its frequency by one without inserting the key itself into the tree. Otherwise, insert the key and set the frequency to one.
 2. The find(String key) method probes the tree to find a search key. A Boolean value true is
    returned if the key is found. Otherwise, false is returned. In either case, the find() method
-   increments the access count by one for all the nodes probed (i.e., all the nodes on the search path from
-   the root).
+   increments the access count by one for all the nodes probed (i.e., all the nodes on the search path from the root).
 3. The sumFreq() and sumProbes() methods return the frequency sum and the access count sum
    of all the keys in the tree, respectively. The resetCounters() method resets the frequencies and
    access counts of all keys in the tree to one and zero, respectively.
 4. The size() method returns the number of keys in the tree. The print() method prints the keys in
-   the tree in the increasing order of their values. Each key should appear on a separate line in the format
-   of [key:frequency:access count].
+   the tree in the increasing order of their values. Each key should appear on a separate line in the format of [key:frequency:access count].
 
 • The AVL class is a subclass of BST. The AVL method must meet the following requirements.
 
